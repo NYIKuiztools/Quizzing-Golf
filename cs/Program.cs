@@ -16,7 +16,7 @@ namespace Quizzing_Word_Finder
 #pragma warning disable CS8602 // Dereference of a possibly null reference. // Throws warning, try catch doesn't resolve. Warning is irrelevent. Crashes program. Resolve later.  
             string year = Console.ReadLine().ToLower().Trim();
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
-            string path = "C:\\Users\\kaleb\\OneDrive\\Documents\\Freetime\\Coding\\C#\\QuzzingUniqueWords\\QuzzingUniqueWords";
+            string path = "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf";
 
 			bool cntu;
 			string[] uniqueWords = File.ReadAllLines(path + "\\" + year + ".txt");
@@ -412,6 +412,8 @@ namespace Quizzing_Word_Finder
 				Console.WriteLine();
 			}
 		}
+	}
+}
 
 // TODO Create question work on tracking system
 // FIXME Question asking into meathods
