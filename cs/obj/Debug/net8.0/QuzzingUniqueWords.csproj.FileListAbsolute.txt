@@ -1,0 +1,14 @@
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\bin\Debug\net8.0\QuzzingUniqueWords.exe
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\bin\Debug\net8.0\QuzzingUniqueWords.deps.json
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\bin\Debug\net8.0\QuzzingUniqueWords.runtimeconfig.json
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\bin\Debug\net8.0\QuzzingUniqueWords.dll
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\bin\Debug\net8.0\QuzzingUniqueWords.pdb
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.AssemblyInfoInputs.cache
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.AssemblyInfo.cs
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.csproj.CoreCompileInputs.cache
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.dll
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\refint\QuzzingUniqueWords.dll
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.pdb
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\QuzzingUniqueWords.genruntimeconfig.cache
+C:\Users\kaleb\OneDrive\Documents\Freetime\Coding\C#\QuzzingUniqueWords\QuzzingUniqueWords\obj\Debug\net8.0\ref\QuzzingUniqueWords.dll
