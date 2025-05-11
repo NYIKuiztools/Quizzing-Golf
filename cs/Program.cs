@@ -21,8 +21,6 @@ namespace Quizzing_Word_Finder
 			bool cntu;
 			string[] uniqueWords = File.ReadAllLines(path + "\\" + year + ".txt");
 
-			GetWords(path + "\\" + year + ".csv");
-
 			bool Cntu = false;
 
 			// Get min Chapter
@@ -60,6 +58,8 @@ namespace Quizzing_Word_Finder
 					Cntu = true;
 
 				}
+
+			GetWords(path + "\\" + year + ".csv", "single", min, max);
 
 			}
 			Console.Clear();
@@ -415,7 +415,7 @@ namespace Quizzing_Word_Finder
 			}
 		}
 
-		static string[] GetWords(string path){
+		static string[][] GetWords(string path, string type, int minChapter, int maxChapter){
 
 			int LinesAmt = (File.ReadAllLines(path)).Length; // Loads all lines from file into array Lines
 
@@ -431,16 +431,53 @@ namespace Quizzing_Word_Finder
 				Console.WriteLine(file[i][0] + "," + file[i][1] + "," + file[i][2] + "," + file[i][3] + "," + file[i][4]);
 			}
 
-			Console.WriteLine(file[0][1]);
-			Console.WriteLine(file[1][1]);
-			Console.ReadLine();
-// FIXME Reading past first col in csv file in GetWords Method
-			return null;
+			// Gets the amount of times type is equal to type in file[][0]
+			int typeAmt = 0;
+
+			for(int i = 0; i < LinesAmt - 1; i++){
+				if (file[i][0] == type){
+					typeAmt++;
+				}
+			}
+
+			// Gets all words of a certain type in file[][0]
+			string[][] allWords = new string[typeAmt][];
+			int iteration = 0;
+
+			for (int i = 0; i < LinesAmt - 1; i++){
+				if (file[i][0] == type){
+					allWords[iteration] = file[i];
+					iteration++;
+				}
+			}
+			
+			// Gets all needed words in allWords[][2]
+			int rangeAmt = 0;
+
+			for(int i = 0; i < allWords.Length; i++){
+				if (Convert.ToInt32(file[i][3]) >= minChapter && Convert.ToInt32(file[i][3]) <= maxChapter){
+					rangeAmt++;
+				}
+			}
+
+
+			string[][] neededWords = new string[rangeAmt][];
+			iteration = 0;
+
+			for (int i = 0; i < allWords.Length; i++){
+				if (Convert.ToInt32(file[i][3]) >= minChapter && Convert.ToInt32(file[i][3]) <= maxChapter){
+					neededWords[iteration] = allWords[i];
+					iteration++;
+				}
+			}
+			
+
+			return neededWords;
 		}
 	}
 }
 
 // TODO Create question work on tracking system
-// FIXME Question asking into meathods
+// FIXME Question asking into methods
 // TODO Add Ranking System
 // TODO Add option for section headers
