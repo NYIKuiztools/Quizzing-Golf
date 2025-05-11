@@ -424,11 +424,15 @@ namespace Quizzing_Word_Finder
 			lines = File.ReadAllLines(path);
 
 			// Splits 'lines' into string[][] file
+			// - and + 1 are to remove header row from year.csv
 			string[][] file = new string[LinesAmt][];
-			for(int i = 0; i < LinesAmt; i++) {
-				file[i] = lines[i].Split(',');
-				Console.WriteLine(file[i][0], ",",file[i][1], ",",file[i][2], ",",file[i][3], ",",file[i][4]);
+			for(int i = 0; i < LinesAmt - 1; i++) {
+				file[i] = lines[i+1].Split(',');
+				Console.WriteLine(file[i][0] + "," + file[i][1] + "," + file[i][2] + "," + file[i][3] + "," + file[i][4]);
 			}
+
+			Console.WriteLine(file[0][1]);
+			Console.WriteLine(file[1][1]);
 			Console.ReadLine();
 // FIXME Reading past first col in csv file in GetWords Method
 			return null;

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuzzingUniqueWords")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de22400bce6d0037bf31df8af426763204e4a406")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92e8cf3a262e07a043363669add15504ac116a24")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuzzingUniqueWords")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuzzingUniqueWords")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
