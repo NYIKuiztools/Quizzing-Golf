@@ -21,6 +21,8 @@ namespace Quizzing_Word_Finder
 			bool cntu;
 			string[] uniqueWords = File.ReadAllLines(path + "\\" + year + ".txt");
 
+			GetWords(path + "\\" + year + ".csv");
+
 			bool Cntu = false;
 
 			// Get min Chapter
@@ -411,6 +413,25 @@ namespace Quizzing_Word_Finder
 				i++;
 				Console.WriteLine();
 			}
+		}
+
+		static string[] GetWords(string path){
+
+			int LinesAmt = (File.ReadAllLines(path)).Length; // Loads all lines from file into array Lines
+
+			// Loads all lines into string[] lines
+			string[] lines = new string[LinesAmt];
+			lines = File.ReadAllLines(path);
+
+			// Splits 'lines' into string[][] file
+			string[][] file = new string[LinesAmt][];
+			for(int i = 0; i < LinesAmt; i++) {
+				file[i] = lines[i].Split(',');
+				Console.WriteLine(file[i][0], ",",file[i][1], ",",file[i][2], ",",file[i][3], ",",file[i][4]);
+			}
+			Console.ReadLine();
+// FIXME Reading past first col in csv file in GetWords Method
+			return null;
 		}
 	}
 }
