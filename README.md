@@ -2,4 +2,4 @@
 ## Notes
 Currently, this only runs in the terminal on C#. Hopefully soon it will be ported to running on the web, followed by an APK download, then possible into the Apple Ecosystem.
 ## Currently Open Tasks
-- [ ] Build CSV reader
+- [X] Build CSV reader
