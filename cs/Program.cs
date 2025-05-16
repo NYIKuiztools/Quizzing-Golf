@@ -15,7 +15,7 @@ namespace Quizzing_Word_Finder
 			//Gets books
 			Console.WriteLine("What year are you quizzing?");
 
-#pragma warning disable CS8602 // Dereference of a possibly null reference. // Throws warning, try catch doesn't resolve. Warning is irrelevent. Crashes program. Resolve later.  
+#pragma warning disable CS8602 // Dereference of a possibly null reference. // Throws warning, try catch doesn't resolve. Warning is irrelevent. 
             string year = Console.ReadLine().ToLower().Trim();
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
             string path = "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf";
