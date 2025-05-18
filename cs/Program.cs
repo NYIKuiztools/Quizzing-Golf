@@ -100,7 +100,6 @@ namespace Quizzing_Word_Finder
 			while (gameCNTU == true)
 			{
 				index = rand.Next(0, totalWords);
-				Console.WriteLine(index);
 				Console.ReadLine();
 				if (round == totalRounds) { break; }
 
@@ -109,9 +108,6 @@ namespace Quizzing_Word_Finder
 
 				word = line[1];
 				Console.Clear();
-				Console.WriteLine("LINE: " + line[0] + ", " + line[1] + ", " + line[2]);
-				Console.ReadLine();
-
 				refrenceChapter = Convert.ToInt32(line[2]);
 
 				firstVerse = Convert.ToInt32(line[3]);
