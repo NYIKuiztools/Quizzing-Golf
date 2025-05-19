@@ -21,7 +21,6 @@ namespace Quizzing_Word_Finder
 			string path = "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf";
 
 			bool cntu;
-
 			bool Cntu = false;
 
 			// Get min Chapter
@@ -68,10 +67,18 @@ namespace Quizzing_Word_Finder
 			// Gets totalRounds
 			Cntu = false;
 			int totalRounds = 20;
+
 			while (Cntu == false)
 			{
 				Console.Clear();
 
+				Console.WriteLine("How many questions would you like?");
+				cntu = false;
+				cntu = int.TryParse(Console.ReadLine(), out totalRounds);
+				if (cntu == true)
+				{
+					Cntu = true;
+				}
 				Console.WriteLine("How many questions would you like?");
 				cntu = false;
 				cntu = int.TryParse(Console.ReadLine(), out totalRounds);
@@ -97,28 +104,25 @@ namespace Quizzing_Word_Finder
 			string[] score = new string[totalRounds];
 
 
+
+
 			while (gameCNTU == true)
 			{
 				index = rand.Next(0, totalWords);
-				Console.WriteLine(index);
-				Console.ReadLine();
 				if (round == totalRounds) { break; }
+
 
 				//Gets word and Refrence
 				line = Cards[index];
 
 				word = line[1];
 				Console.Clear();
-				Console.WriteLine("LINE: " + line[0] + ", " + line[1] + ", " + line[2]);
-				Console.ReadLine();
-
 				refrenceChapter = Convert.ToInt32(line[2]);
 
 				firstVerse = Convert.ToInt32(line[3]);
 				try
 				{
 					secondVerse = Convert.ToInt32(line[4]);
-
 				}
 				catch (FormatException)
 				{
@@ -158,7 +162,6 @@ namespace Quizzing_Word_Finder
 				}
 				catch
 				{
-
 					Console.WriteLine("Something went wrong."); // Error message
 					Console.WriteLine();
 					// Prints score as ussual
@@ -280,7 +283,6 @@ namespace Quizzing_Word_Finder
 					iteration++;
 				}
 			}
-
 			// Gets all needed words in allWords[][2]
 			int rangeAmt = 0;
 
@@ -304,11 +306,9 @@ namespace Quizzing_Word_Finder
 					iteration++;
 				}
 			}
-
 			totalWords = rangeAmt;
 
 			return neededWords;
 		}
 	}
 }
-
