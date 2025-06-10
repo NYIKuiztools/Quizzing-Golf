@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq.Expressions;
+using System.Reflection;
 
 namespace Quizzing_Word_Finder
 {
@@ -18,7 +19,7 @@ namespace Quizzing_Word_Finder
 #pragma warning disable CS8602 // Dereference of a possibly null reference. // Throws warning, try catch doesn't resolve. Warning is irrelevent. 
 			string year = Console.ReadLine().ToLower().Trim();
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
-			string path = "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf";
+			string path = "..\\..\\..\\..\\";
 
 			bool cntu;
 			bool Cntu = false;
@@ -72,13 +73,6 @@ namespace Quizzing_Word_Finder
 			{
 				Console.Clear();
 
-				Console.WriteLine("How many questions would you like?");
-				cntu = false;
-				cntu = int.TryParse(Console.ReadLine(), out totalRounds);
-				if (cntu == true)
-				{
-					Cntu = true;
-				}
 				Console.WriteLine("How many questions would you like?");
 				cntu = false;
 				cntu = int.TryParse(Console.ReadLine(), out totalRounds);
