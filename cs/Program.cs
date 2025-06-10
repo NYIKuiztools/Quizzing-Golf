@@ -1,24 +1,16 @@
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.IO;
-using System.Linq.Expressions;
-using System.Reflection;
-
-namespace Quizzing_Word_Finder
+namespace QuizzingGolf
 {
 	internal class Program
 	{
 		public static int totalWords = 0;
-		static void Main(string[] args)
+		static void Main( string[] args)
 		{
 			Random rand = new Random();
 
 			//Gets books
 			Console.WriteLine("What year are you quizzing?");
 
-#pragma warning disable CS8602 // Dereference of a possibly null reference. // Throws warning, try catch doesn't resolve. Warning is irrelevent. 
 			string year = Console.ReadLine().ToLower().Trim();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
 			string path = "..\\..\\..\\..\\";
 
 			bool cntu;
@@ -61,7 +53,7 @@ namespace Quizzing_Word_Finder
 				}
 			}
 
-			string[][] Cards = GetWords(path + "\\" + year + ".csv", "single", min, max);
+			string[][] cards = GetWords(path + "\\" + year + ".csv", "single", min, max);
 
 			Console.Clear();
 
@@ -97,9 +89,7 @@ namespace Quizzing_Word_Finder
 
 			string[] score = new string[totalRounds];
 
-
-
-
+			
 			while (gameCNTU == true)
 			{
 				index = rand.Next(0, totalWords);
@@ -107,7 +97,7 @@ namespace Quizzing_Word_Finder
 
 
 				//Gets word and Refrence
-				line = Cards[index];
+				line = cards[index];
 
 				word = line[1];
 				Console.Clear();
@@ -142,9 +132,7 @@ namespace Quizzing_Word_Finder
 
 				// Gets guess
 				Console.WriteLine(word);
-#pragma warning disable CS8602 // Dereference of a possibly null reference. // Throws warning, try catch doesn't resolve. Warning is irrelevent. Crashes program. 
 				guess = Console.ReadLine().Trim().ToLower();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
 				if (guess == "stop!") { break; } // Provides way to skip the rest of the rounds.
 												 //Converts guess to int
@@ -227,7 +215,7 @@ namespace Quizzing_Word_Finder
 			Console.WriteLine();
 			Console.WriteLine("Here is your score card: ");
 
-			// Prints Score Card
+			// Prints Scorecard
 			i = 0;
 			while (i <= round - 1)
 			{
@@ -235,6 +223,10 @@ namespace Quizzing_Word_Finder
 				i++;
 				Console.WriteLine();
 			}
+			Console.WriteLine();
+			Console.WriteLine("Press any key to close.");
+			Console.ReadLine();
+			Console.Clear();
 		}
 
 		static string[][] GetWords(string path, string type, int minChapter, int maxChapter)
@@ -254,7 +246,7 @@ namespace Quizzing_Word_Finder
 				file[i] = lines[i + 1].Split(',');
 			}
 
-			// Gets the amount of times type is equal to type in file[][0]
+			// Gets the number of times type is equal to type in file[][0]
 			int typeAmt = 0;
 
 			for (int i = 0; i < LinesAmt - 1; i++)
