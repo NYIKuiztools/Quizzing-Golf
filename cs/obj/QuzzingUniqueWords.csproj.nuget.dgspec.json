@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj": {}
+    "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuzzingUniqueWords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj": {
+    "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuzzingUniqueWords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj",
+        "projectUniqueName": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuzzingUniqueWords.csproj",
         "projectName": "QuzzingUniqueWords",
-        "projectPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj",
+        "projectPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuzzingUniqueWords.csproj",
         "packagesPath": "C:\\Users\\kaleb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\obj\\",
+        "outputPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kaleb\\AppData\\Roaming\\NuGet\\NuGet.Config"

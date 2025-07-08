@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hEqc8AG10S4=",
+  "dgSpecHash": "qe9Z93JH/AA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj",
+  "projectFilePath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuizzingGolf.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
-    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
-    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
-    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.14\\microsoft.netcore.app.host.win-x64.8.0.14.nupkg.sha512"
+    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\kaleb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.17\\microsoft.netcore.app.host.win-x64.8.0.17.nupkg.sha512"
   ],
   "logs": []
 }
