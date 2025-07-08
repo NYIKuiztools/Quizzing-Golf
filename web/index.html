@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Golf</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+	<h1>Welcome</h1>
+</header>
+
+<main>
+	<!-- #!Start-->
+	<button id="start" class="button" >Start</button>
+	<!-- #! Settings Page-->
+	<div id="settingsPage" class="hidden">
+		<h2>Configuration</h2>
+		<div id="settings" class="buttons">
+<!--			#. Book-->
+			<label class="button" for="book">Book</label>
+			<select class="button" id="book" name="book" required>
+				<option value="L">Luke</option>
+				<option value="C">1/2 Corinthians</option>
+				<option value="J">John</option>
+				<option value="H">Hebrews, 1/2 Peter</option>
+				<option value="M">Matthew</option>
+				<option value="R">Romans & James</option>
+				<option value="A">Acts</option>
+				<option value="G">GEPCP</option>
+			</select>
+<!--			#> Chapters and Questions amount-->
+			<label class="button" for="minCh">Minimum Chapter</label>
+			<input class="button" id="minCh" max="24" min="1" type="number" value="1">
+			
+			<label class="button" for="questions">Questions</label>
+			<input class="button" type="number" id="questions" min="2" max="1000" value="10">
+			
+			<label class="button" for="maxCh">Minimum Chapter</label>
+			<input class="button" id="maxCh" max="24" min="1" type="number" value="24">
+		</div>
+		<button type="button" class="buttons" id="begin">Start</button>
+	</div>
+<!--	End Start-->
+<!--	#! Game	-->
+	
+<!--		#. Question-->
+	<fieldset id="answers" class="hidden">
+		<h3 id="word"></h3>
+		<br/>
+		<div id="multiBook" class="hidden">
+			<label for="Book1">Book 1</label>
+			
+			<select id="Book1" name="Book">
+				<option value=""></option>
+			</select>
+			<br/>
+		</div>
+		
+		<label for="Chapter1">Chapter 1</label>
+		<input id="Chapter1" type="number" name="Chapter" min="1" max="24">
+		<br/>
+		
+		<label for="Verse1">Verse 1</label>
+		<input id="Verse1" type="number" name="Verse" min="1" max="80">
+		<br/>
+		
+		<button type="button" id="submit">Next</button>
+	</fieldset>
+<!--		#. Answer-->
+	<div id="resultPage" class="hidden">
+		<p id="result"></p>
+		<button type="button" id="next">Next</button>
+	</div>	
+		
+	
+</main>
+<footer>
+	<p>NFC - Intermountain - Northwest</p>
+</footer>
+
+<script src="elements.js"></script>
+<script src="functions.js"></script>
+<script src="caller.js"></script> <!-- must be loaded last-->
+
+</body>
+</html>
