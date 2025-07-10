@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj",
-      "projectName": "QuzzingUniqueWords",
-      "projectPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\QuzzingUniqueWords.csproj",
+      "projectUniqueName": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuizzingGolf.csproj",
+      "projectName": "QuizzingGolf",
+      "projectPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\QuizzingGolf.csproj",
       "packagesPath": "C:\\Users\\kaleb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\NYIQuizzingGolf\\cs\\obj\\",
+      "outputPath": "C:\\Users\\kaleb\\OneDrive\\Documents\\GitHub\\Quizzing-Golf\\cs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kaleb\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -63,19 +63,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.17, 8.0.17]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.17, 8.0.17]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.17, 8.0.17]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.17, 8.0.17]"
           }
         ],
         "frameworkReferences": {
@@ -83,7 +83,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
