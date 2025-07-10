@@ -1,6 +1,3 @@
-/cs/bin
-/cs/obj
-/cs/bin
-/cs/bin
-/cs/obj
-/.idea
+cs/bin/
+cs/obj/
+.idea/
